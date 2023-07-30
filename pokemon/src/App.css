@@ -3,6 +3,7 @@
     max-width: fit-content;
     background-color: rgb(182, 182, 219);
     min-height: 500px;
+    min-width: 160px;
 }
 
 div.pokemon {
