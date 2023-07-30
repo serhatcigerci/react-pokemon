@@ -11,6 +11,16 @@ div.pokemon {
     justify-content: center;
 }
 
+.pokemon button {
+    min-width: 80px;
+    background-color: rgb(230, 175, 175);
+    border-radius: 20%;
+}
+.pokemon button:hover {
+    transform: scale(1.5);
+    transition-duration: 300ms;
+}
+
 .background {
     background-image: url('https://iasbh.tmgrup.com.tr/4eb55a/650/344/96/0/1992/994?u=https://isbh.tmgrup.com.tr/sbh/2023/06/30/pokemon-karakterleri-en-iyi-pokemon-karakterleri-isimleri-gucleri-ve-ozellikleri-st1-1688116409421.jpeg');
     background-repeat: no-repeat;
