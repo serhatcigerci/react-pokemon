@@ -1,0 +1,26 @@
+.container {
+    margin-left: 45%;
+    max-width: fit-content;
+    background-color: rgb(182, 182, 219);
+    min-height: 500px;
+}
+
+div.pokemon {
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    background-image: url('https://iasbh.tmgrup.com.tr/4eb55a/650/344/96/0/1992/994?u=https://isbh.tmgrup.com.tr/sbh/2023/06/30/pokemon-karakterleri-en-iyi-pokemon-karakterleri-isimleri-gucleri-ve-ozellikleri-st1-1688116409421.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+
+}
+
+.background img {
+    background-image: none;
+    opacity: 0.1;
+}
+
