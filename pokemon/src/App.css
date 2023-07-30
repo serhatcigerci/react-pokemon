@@ -1,9 +1,10 @@
 .container {
-    margin-left: 45%;
+    margin-left: 38%;
     max-width: fit-content;
     background-color: rgb(182, 182, 219);
     min-height: 500px;
-    min-width: 160px;
+    min-width: 260px;
+    font-size: 10px;
 }
 
 div.pokemon {

@@ -9,6 +9,7 @@ function App() {
 
   const [currentPageUrl, setCurrentPageUrl] = useState('https://pokeapi.co/api/v2/pokemon')
   const [nextPageUrl, setNextPageUrl] = useState()
+  const [PageUrl, setPageUrl] = useState()
   const [prevPageUrl, setPrevPageUrl] = useState()
   const [loading, setLoading] = useState(true)
 
@@ -19,6 +20,7 @@ function App() {
       setNextPageUrl(res.data.next)
       setPrevPageUrl(res.data.previous)
       setPokemon(res.data.results.map(p => p.name))
+      setPageUrl(res.data.results.map(p => p.url))
     })
 
     return
@@ -35,7 +37,7 @@ function App() {
 
   return (
     <>
-      <PokemonList pokemon={pokemon} />
+      <PokemonList pokemon={pokemon} PageUrl = {PageUrl} />
       <Pagination 
         goToNextPage={nextPageUrl ? goToNextPage : null}
         goToPrevPage={prevPageUrl ? goToPrevPage : null}
